@@ -1,0 +1,78 @@
+.Carousel {
+height: 500px;
+width: 50%;
+
+}
+
+.innerCarousel {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.innerCarousel .left {
+    flex: 5%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.innerCarousel .center {
+    flex: 80%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.innerCarousel .right {
+    flex: 5%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+}
+.last{
+    position: absolute;
+    bottom: 80px;
+    padding: 5px;
+    right: 45%;
+}
+
+/* .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+  } */
+  .container-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    margin: 0 5px;
+    background: #f1f1f1;
+  }
+  .dot.active {
+    background: rgb(32, 32, 32);
+  }
